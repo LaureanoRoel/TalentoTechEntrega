@@ -10,26 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="header">
+    <!-- Header -->
+    <header class="header" > 
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="img/Logo.jpg" alt="logoempresa" width="125px">
+                    <img src="img/Logo.jpg" alt="logoempresa" width="125px" id="logo">
                 </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#reseñas">Reseñas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#reseñas">Reseñas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
                 <img src="img/carro2png.png" width="30px" height="30px" alt="Carro">
-            </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="header">
+        <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <h1>¡Los Grandes Clasicos<br>A Mano!</h1>
+                    <h1>¡Los Grandes Clásicos<br>A Mano!</h1>
                     <p>Lorem ipsum dolor sit amet.</p>
                     <a href="" class="btn">Explorar &#8594;</a>
                 </div>
@@ -40,129 +46,108 @@
         </div>
     </div>
 
-    <!-- Categorias, CD y Vinilos -->
-    <div class="small_container">
-        <div class="categorias">
-            <div class="row">
-                <div class="col-3">
-                    <img src="img/cdNevermind.png" alt="Cd Nevermind Categoria CD">
-                </div>
-                <div class="col-3">
-                    <img src="img/vinilutero.png" alt="Vinilo In Utero Categoria Vinilos">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Productos -->
-    <div class="flex-container">
+    <section id="productos">
         <h2 class="title">Productos Destacados</h2>
         <div class="row">
-            <div class="card">
-                <img src="img/jeff_buckley_grace.png" alt=" Jeff Buckley - Grace">
+            <article class="card">
+                <img src="img/jeff_buckley_grace.png" alt="Jeff Buckley - Grace">
                 <h4>Grace - Jeff Buckley</h4>
                 <p>$40</p>
-            </div>
-            <div class="card">
-                <img src="img/luis_miguel_20_años.png" alt=" Luis Miguel - 20 Años">
+            </article>
+            <article class="card">
+                <img src="img/luis_miguel_20_años.png" alt="Luis Miguel - 20 Años">
                 <h4>Luis Miguel 20 años - Luis Miguel</h4>
                 <p>$25</p>
-            </div>
-            <div class="card">
-                <img src="img/david_bowie_lets_dance.png" alt=" David Bowie - Lets Dance">
+            </article>
+            <article class="card">
+                <img src="img/david_bowie_lets_dance.png" alt="David Bowie - Lets Dance">
                 <h4>Lets Dance - David Bowie</h4>
                 <p>$30</p>
-            </div>
-            <div class="card">
-                <img src="img/bill_evans_momentum.png" alt=" Bill Evans - Momentum">
+            </article>
+            <article class="card">
+                <img src="img/bill_evans_momentum.png" alt="Bill Evans - Momentum">
                 <h4>Momentum - Bill Evans</h4>
                 <p>$25</p>
-            </div>
+            </article>
+        </div>
 
-            <!-- Agregados Recientemente -->
-            <h2 class="title">Agregados Recientemente</h2>
+        <h2 class="title">Agregados Recientemente</h2>
+        <div class="row">
+            <article class="card">
+                <img src="img/prince_and_the_revolution_purple_rain.png" alt="Prince - Purple Rain">
+                <h4>Purple Rain - Prince</h4>
+                <p>$25</p>
+            </article>
+            <article class="card">
+                <img src="img/prince_prince.png" alt="Prince - Prince">
+                <h4>Prince - Prince</h4>
+                <p>$25</p>
+            </article>
+            <article class="card">
+                <img src="img/the_doors_the_doors.png" alt="The Doors - The Doors">
+                <h4>The Doors - The Doors</h4>
+                <p>$25</p>
+            </article>
+            <article class="card">
+                <img src="img/the_doors_l_a_woman.png" alt="The Doors - L.A Woman">
+                <h4>L.A Woman - The Doors</h4>
+                <p>$25</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Oferta -->
+    <section class="oferta">
+        <div class="small-container">
             <div class="row">
-                <div class="card">
-                    <img src="img/prince_and_the_revolution_purple_rain.png" alt=" Prince - Prince And The Revolution Purple Rain">
-                    <h4>Purple Rain - Prince</h4>
-                    <p>$25</p>
+                <div class="col-2">
+                    <img src="img/cowboyvinilo.png" alt="Cowboy Bebop - SeatBelts y Yoko Kanno">
                 </div>
-                <div class="card">
-                    <img src="img/prince_prince.png" alt=" Prince - Prince">
-                    <h4>Prince - Prince</h4>
-                    <p>$25</p>
-                </div>
-                <div class="card">
-                    <img src="img/the_doors_the_doors.png" alt=" The Doors - The Doors">
-                    <h4>The Doors - The Doors</h4>
-                    <p>$25</p>
-                </div>
-                <div class="card">
-                    <img src="img/the_doors_l_a_woman.png" alt=" L.A Woman - The Doors">
-                    <h4>L.A Woman - The Doors</h4>
-                    <p>$25</p>
+                <div class="col-2">
+                    <h1>Cowboy Bebop Soundtrack Vinilo</h1>
+                    <p>¡Exclusivo Importado Desde Japón!</p>
+                    <small>Sumérgete en el universo de Cowboy Bebop con su aclamado soundtrack, una obra maestra que combina jazz, blues y rock en un viaje musical único.<br>Compuesto por Yoko Kanno y su banda, The Seatbelts, este vinilo captura la esencia y energía de la serie, transportándote a una galaxia de acción y melancolía. Ideal para amantes de la música y coleccionistas de vinilos que buscan una experiencia sonora envolvente y nostálgica.<br></small>
+                    <a href="" class="btn">¡Comprar Ahora! &#8594;</a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Oferta -->
-        <div class="oferta">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="img/cowboyvinilo.png" alt="Cowboy BeBop - SeatBelts y Yokko Kanno">
-                    </div>
-                    <div class="col-2">
-                        <h1>CowboyBebop Soundtrack Vinilo</h1>
-                        <p>¡Exclusivo Importado Desde Japon!</p>
-                        <small>Sumérgete en el universo de Cowboy Bebop con su aclamado soundtrack, una obra maestra que combina jazz, blues y rock en un viaje musical único.<br> Compuesto por Yoko Kanno y su banda, The Seatbelts, este vinilo captura la esencia y energía de la serie, transportándote a una galaxia de acción y melancolía. Ideal para amantes de la música y coleccionistas de vinilos que buscan una experiencia sonora envolvente y nostálgica.</small>
-                        <a href="" class="btn">¡Comprar Ahora! &#8594;</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Reseñas -->
+    <section class="comentarios" id="reseñas">
+        <h2 class="title">Lo Que Dicen Nuestros Clientes</h2>
+        <div class="grid-container">
+            <figure class="grid-item">
+                <img src="img/detecive.png" alt="Avatar" class="avatar">
+                <blockquote>"Escuchar Bill Evans mientras me tomo un Blue Label, Un Elixir"</blockquote>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/detecive.png" alt="Avatar" class="avatar">
+                <blockquote>"¡No sabía que regalarle a mi amigo pretencioso y encontré la página perfecta!"</blockquote>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/detecive.png" alt="Avatar" class="avatar">
+                <blockquote>"Ni siquiera tengo un toca discos pero me gusta comprar vinilos"</blockquote>
+            </figure>
         </div>
-
-        <!-- Reseñas -->
-        <div class="comentarios">
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="img/detecive.png" alt="Avatar" class="avatar">
-                    <p>"Escuchar Bill Evans mientras me tomo un Blue Label, Un Elixir"</p>
-                </div>
-                <div class="grid-item">
-                    <img src="img/detecive.png" alt="Avatar" class="avatar">
-                    <p>"¡No sabía que regalarle a mi amigo pretencioso y encontré la página perfecta!"</p>
-                </div>
-                <div class="grid-item">
-                    <img src="img/detecive.png" alt="Avatar" class="avatar">
-                    <p>"Ni siquiera tengo un TocaDiscos pero siempre compro vinilos"</p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>ClasicRecords</h3>
-            <p>La mejor selección de música clásica en formato físico.</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Síguenos</h4>
-            <ul class="social-icons">
-                <li><a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 ClasicRecords. Todos los derechos reservados.</p>
-    </div>
-</footer>
-
-</body>
-</html>
-
+    </section>
+     <!-- Contacto -->
+     <section id="contacto">
+        <h2 class="title">Contáctanos</h2>
+        <form action="https://formspree.io/f/xeoqbjlw" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required="">
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required="">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required=""></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
