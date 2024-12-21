@@ -41,6 +41,7 @@ body {
     color: #FEA655 !important;
 }
 
+
 /* Buscador */
 .navbar .form-control {
     border-color: #FEA655;
@@ -191,17 +192,29 @@ body {
     font-size: 16px;
     color: #777;
 }
+.card .btn-primary,
+#productos .btn-primary {
+    background-color: #566357 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+}
 
+.card .btn-primary:hover,
+#productos .btn-primary:hover {
+    background-color: #909473 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+}
 /* Oferta */
 /* Sección de Oferta */
 .oferta {
-    background-color: #FFD98E; /* Fondo */
+    background-color: #FFD98E; 
     padding: 40px 20px;
 }
 
 .oferta h1 {
     color: #566357;
-    font-size: 2.5rem; /* Tamaño del título */
+    font-size: 2.5rem; 
     margin-bottom: 20px;
 }
 
@@ -225,6 +238,22 @@ body {
     font-size: 1.2rem;
     border-radius: 5px;
 }
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #566357;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #909473;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: ##566357;
+    --bs-btn-active-border-color: #566357;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #909473;
+    --bs-btn-disabled-border-color: #909473;
+ }
 
 .oferta .btn:hover {
     background-color: #566357;
@@ -280,7 +309,7 @@ body {
     font-size: 14px;
     margin: 0;
 }
-/* Navbar Links: Smooth Scroll */
+
 html {
     scroll-behavior: smooth;
 }
@@ -335,4 +364,79 @@ html {
 
 #contacto button:hover {
     background-color: #555;
+}
+#cart-container {
+    background-color: #FFF8E1;
+    border: 2px solid #FEA655;
+    padding: 20px;
+    border-radius: 10px;
+}
+#cart-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.modal-dialog {
+    max-width: 600px; 
+}
+
+.bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: #fff !important;
+} 
+
+#cart-count {
+    font-size: 14px;
+    padding: 2px 5px;
+    color: #000;
+}
+
+.add-to-cart {
+    transition: all 0.3s ease; 
+}
+
+.add-to-cart.btn-success {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: #fff !important;
+}
+
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #566357;
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.back-to-top:hover {
+    background-color: #909473;
+}
+
+
+.back-to-top i {
+    line-height: 50px;
 }
